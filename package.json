@@ -1,9 +1,11 @@
 {
   "name": "wallet_transaction",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "test": "jest --runInBand"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +22,9 @@
     "jest": "^30.4.2",
     "nodemon": "^3.1.14",
     "supertest": "^7.2.2"
+  },
+    "jest": {
+    "setupFiles": ["E:/Wallet_Transaction/tests/jest.setup.js"]
   }
+
 }
